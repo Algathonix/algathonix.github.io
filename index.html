@@ -390,11 +390,11 @@
   <div class="container">
     <br />
     <div class="button-container" style="display: flex; justify-content: space-around; margin-top: 20px;">
-      <a href="easyflex:#zzp_fact=6008:44751008" target="_blank" style="background-color: #4CAF50; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
-        Reverse billing factuur: 44751008
+      <a href="easyflex:#zzp_fact=6005:23361003" target="_blank" style="background-color: #4CAF50; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
+        Reverse billing factuur: 23361003
       </a>
-      <a href="easyflex:#fact=6008:24000023" target="_blank" style="background-color: #2196F3; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
-        Factuur relatie: 24000023
+      <a href="easyflex:#fact=6005:24000001" target="_blank" style="background-color: #2196F3; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
+        Factuur relatie: 24000001
       </a>
       <a href="easyflex:#decl=6005:391347559" target="_blank" style="background-color: #f44336; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
         Declaratie: 391347559
@@ -437,24 +437,25 @@
 </style>
 
 <script>
-  function zoekInEasyflex() {
-    var zoekterm = document.getElementById("zoekterm").value;
-    if (zoekterm) {
-      // Toon dialoogvenster voor verwerking
-      document.getElementById("zoek_dialoog").style.display = "block";
+function zoekInEasyflex() {
+  var zoekterm = document.getElementById("zoekterm").value;
+  if (zoekterm) {
+    // Toon dialoogvenster voor verwerking
+    document.getElementById("zoek_dialoog").style.display = "block";
 
-      // Simuleer een vertraging om te doen alsof de zoekopdracht wordt verwerkt
-      setTimeout(function() {
-        var url = "easyflex:#search=6005:'" + encodeURIComponent(zoekterm) + """;
-        window.open(url, '_blank');
+    // Simuleer een vertraging om te doen alsof de zoekopdracht wordt verwerkt
+    setTimeout(function() {
+      var url = "easyflex:#search=6005:\"" + encodeURIComponent(zoekterm) + "\"";
+      window.open(url, '_blank');
 
-        // Verberg dialoogvenster na het openen van de nieuwe tab
-        document.getElementById("zoek_dialoog").style.display = "none";
-      }, 4000); // Vertraging van 3 seconden voor demonstratiedoeleinden, kan worden aangepast
-    } else {
-      alert("Voer een zoekterm in.");
-    }
+      // Verberg dialoogvenster na het openen van de nieuwe tab
+      document.getElementById("zoek_dialoog").style.display = "none";
+    }, 4000); // Vertraging van 3 seconden voor demonstratiedoeleinden, kan worden aangepast
+  } else {
+    alert("Voer een zoekterm in.");
   }
+}
+
 </script>
 
 
