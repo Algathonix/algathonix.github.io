@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 <title>Unique</title>
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="favicon.jpg" type="image/png">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
@@ -32,7 +32,10 @@
 			<ul class="nav navbar-nav" id="mainNav">
 			  <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
 			  <li><a href="#aboutUs" class="scroll-link">Over Ons</a></li>
-			  <li><a href="#service" class="scroll-link">Diensten</a></li>
+			  <li><a href="#flexwerkers" class="scroll-link">Flexwerkers</a></li>
+			  <li><a href="#plaatsingen" class="scroll-link">Plaatsingen</a></li>
+			  <li><a href="#relaties" class="scroll-link">Relaties</a></li>
+			<li><a href="#service" class="scroll-link">Diensten</a></li>
 			  <li><a href="#team" class="scroll-link">Team</a></li>
 			  <li><a href="#contact" class="scroll-link">Contact</a></li>
 			</ul>
@@ -62,6 +65,254 @@
     </div>
   </div>
 </section>
+
+
+<section id="flexwerkers">
+  <div class="container">
+  <br />
+    <h2>Flexwerkers</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" name="naam" placeholder="Zoek op naam" class="form-control">
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="status">Status</label>
+        <select id="status" name="status" class="form-control">
+          <option value="actief">Actief</option>
+          <option value="passief">Passief</option>
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="type">Type</label>
+        <select id="type" name="type" class="form-control">
+          <option value="flexwerker">Flexwerker</option>
+          <option value="vaste medewerker">Vaste Medewerker</option>
+		  <option value="ZZP">ZZP</option>
+		  
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label> </label> <!-- Voor uitlijning -->
+        <button type="button" class="btn btn-primary btn-block">Zoek</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="overzicht">
+  <div class="container">
+<br />
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Naam</th>
+          <th>Geboortedatum</th>
+          <th>Status</th>
+          <th>Type</th>
+          <th>Navigeer naar</th>
+        </tr>
+      </thead>
+      <tbody>
+
+		<tr>
+		  <td>M. van der Avoird (Mark)</td>
+		  <td>01-12-1990</td>
+		  <td>Actief</td>
+		  <td>Flexwerker</td>
+		  <td>
+			<a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+			  <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+			</a>
+		  </td>
+		</tr>
+		<tr>
+		  <td>Y. Heijmans (Yoeri)</td>
+		  <td>03-06-1991</td>
+		  <td>Actief</td>
+		  <td>Flexwerker</td>
+		  <td>
+			<a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+			  <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+			</a>
+		  </td>
+
+    <tr>
+      <td>Y. Heijmans (Yoeri)</td>
+      <td>03-06-1991</td>
+      <td>Actief</td>
+      <td>Flexwerker</td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>M. Pessers (Marieke)</td>
+      <td>06-09-1983</td>
+      <td>Actief</td>
+      <td>Flexwerker</td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>De Groot Consultancy</td>
+      <td>16-11-1994</td>
+      <td>Actief</td>
+      <td>ZZP'er</td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>W. van Wanrooij (Wendy)</td>
+      <td>10-03-1986</td>
+      <td>Actief</td>
+      <td>Flexwerker</td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+
+        </tr>
+        <!-- Voeg hier meer rijen toe -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+<section id="plaatsingen">
+  <div class="container">
+  <br />
+    <h2>Plaatsingen</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" name="naam" placeholder="Zoek op naam" class="form-control">
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="status">Status</label>
+        <select id="status" name="status" class="form-control">
+          <option value="actief">Actief</option>
+          <option value="passief">Passief</option>
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="type">Type</label>
+        <select id="type" name="type" class="form-control">
+          <option value="flexwerker">Flexwerker</option>
+          <option value="vaste medewerker">Vaste Medewerker</option>
+		  <option value="ZZP">ZZP</option>
+		  
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label> </label> <!-- Voor uitlijning -->
+        <button type="button" class="btn btn-primary btn-block">Zoek</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="overzicht">
+  <div class="container">
+<br />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Plaatsing nummer</th>
+      <th>Relatie</th>
+      <th>Flexwerker</th>
+      <th>Startdatum</th>
+      <th>Einddatum</th>
+      <th>Navigeer naar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10414636</td>
+      <td>Ahold Delhaize</td>
+      <td>J. De Groot (Job)</td>
+      <td>01-10-2023</td>
+      <td></td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>9506494</td>
+      <td>Wiltec</td>
+      <td>Y. Heijmans (Yoeri)</td>
+      <td>01-11-2022</td>
+      <td></td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+   <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>6558690</td>
+      <td>Bakker Bart</td>
+      <td>M. Pessers (Marieke)</td>
+      <td>01-10-2019</td>
+      <td>30-09-2021</td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>9306246</td>
+      <td>H&M</td>
+      <td>W. van Wanrooij (Wendy)</td>
+      <td>15-08-2022</td>
+      <td>14-08-2023</td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>9397420</td>
+      <td>Aldi</td>
+      <td>M. van der Avoird (Mark)</td>
+      <td>01-09-2022</td>
+      <td>31-08-2023</td>
+      <td>
+        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <!-- Voeg hier meer rijen toe -->
+  </tbody>
+</table>
+
+  </div>
+</section>
+
+
 
 <section id="aboutUs"><!--Aboutus-->
 <div class="inner_wrapper">
