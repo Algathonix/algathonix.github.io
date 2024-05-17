@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>DEEP EASYFLEX LINK</title>
+<title>Uitzendbureau</title>
 <link rel="icon" href="favicon.jpg" type="image/png">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
@@ -400,20 +400,19 @@
   </div>
 </section>
 
-
 <section id="zoek_easyflex" style="margin-top: 40px;">
   <div class="container">
     <h2>Zoek in Easyflex</h2>
+    <p style="text-align: center; font-size: 14px; color: #666;">(Zoeken in schema 6005)</p>
     <form id="easyflex-zoekformulier" action="javascript:void(0);" onsubmit="zoekInEasyflex()">
       <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
-        <img id="chatgpt-logo" src="img/chatgptlogo.png" alt="ChatGPT" width="50" height="50" style="margin-right: 10px; ">
+        <img id="chatgpt-logo" src="img/chatgptlogo.png" alt="ChatGPT" width="50" height="50" style="margin-right: 10px; animation: rotate 30s linear infinite;">
         <input type="text" id="zoekterm" placeholder="Voer zoekterm in..." style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; width: 250px; margin-right: 10px;">
         <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Zoeken</button>
       </div>
     </form>
   </div>
 </section>
-
 <!-- Dialoogvenster voor verwerking -->
 <div id="zoek_dialoog" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
   <div style="display: flex; justify-content: center; align-items: center;">
@@ -443,17 +442,19 @@
 
       // Simuleer een vertraging om te doen alsof de zoekopdracht wordt verwerkt
       setTimeout(function() {
-        var url = "easyflex:#search=6005:" + encodeURIComponent(zoekterm);
+        var url = "easyflex:#search=6005:\"" + encodeURIComponent(zoekterm) + "\"";
         window.open(url, '_blank');
 
         // Verberg dialoogvenster na het openen van de nieuwe tab
         document.getElementById("zoek_dialoog").style.display = "none";
-      }, 8000); // Vertraging van 3 seconden voor demonstratiedoeleinden, kan worden aangepast
+      }, 4000); // Vertraging van 3 seconden voor demonstratiedoeleinden, kan worden aangepast
     } else {
       alert("Voer een zoekterm in.");
     }
   }
 </script>
+
+
 
 
 
