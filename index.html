@@ -331,7 +331,7 @@
       <td>01-11-2022</td>
       <td></td>
       <td>
-        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+        <a href="easyflex:#job=6005:9506494" target="easyflex:#job=6005:9506494" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
           <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
         </a>
       </td>
@@ -347,7 +347,7 @@
       <td>01-10-2019</td>
       <td>30-09-2021</td>
       <td>
-        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+        <a href="easyflex:#job=6005:2890530" target="easyflex:#job=6005:2890530" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
           <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
         </a>
       </td>
@@ -359,7 +359,7 @@
       <td>15-08-2022</td>
       <td>14-08-2023</td>
       <td>
-        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+        <a href="easyflex:#job=6005:9306246" target="easyflex:#job=6005:9306246" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
           <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
         </a>
       </td>
@@ -371,7 +371,7 @@
       <td>01-09-2022</td>
       <td>31-08-2023</td>
       <td>
-        <a href="img/easyflex-logo-groen.svg" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+        <a href="easyflex:#job=6005:9397420" target="easyflex:#job=6005:9397420" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
           <img src="img/easyflex-logo-groen.svg" alt="Profiel" width="75" height="25">
         </a>
       </td>
@@ -383,6 +383,47 @@
   </div>
 </section>
 
+<section id="overzicht">
+  <div class="container">
+    <br />
+    <div class="button-container" style="display: flex; justify-content: space-around; margin-top: 20px;">
+      <a href="easyflex:#zzp_fact=6005:23361003" target="_blank" style="background-color: #4CAF50; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
+        Reverse billing factuur: 23361003
+      </a>
+      <a href="easyflex:#fact=6005:2023033" target="_blank" style="background-color: #2196F3; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
+        Factuur relatie: 2023033
+      </a>
+      <a href="easyflex:#decl=6005:391347559" target="_blank" style="background-color: #f44336; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
+        Declaratie: 391347559
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="zoek_easyflex" style="margin-top: 40px;">
+  <div class="container">
+    <h2>Zoek in Easyflex</h2>
+    <form id="easyflex-zoekformulier" action="javascript:void(0);" onsubmit="zoekInEasyflex()">
+      <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <input type="text" id="zoekterm" placeholder="Voer zoekterm in..." style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; width: 300px; margin-right: 10px;">
+        <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Zoeken</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  function zoekInEasyflex() {
+    var zoekterm = document.getElementById("zoekterm").value;
+    if (zoekterm) {
+      var url = "easyflex:#search=6005:" + encodeURIComponent(zoekterm);
+      window.open(url, '_blank');
+    } else {
+      alert("Voer een zoekterm in.");
+    }
+  }
+</script>
 
 
 <section id="aboutUs"><!--Aboutus-->
