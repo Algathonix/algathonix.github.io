@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Unique</title>
+<title>DEEP EASYFLEX LINK</title>
 <link rel="icon" href="favicon.jpg" type="image/png">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
@@ -31,12 +31,12 @@
 	    <div id="main-nav" class="collapse navbar-collapse navStyle">
 			<ul class="nav navbar-nav" id="mainNav">
 			  <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
-			  <li><a href="#aboutUs" class="scroll-link">Over Ons</a></li>
 			  <li><a href="#flexwerkers" class="scroll-link">Flexwerkers</a></li>
 			  <li><a href="#relaties" class="scroll-link">Relaties</a></li>
 			  <li><a href="#plaatsingen" class="scroll-link">Plaatsingen</a></li>
-			<li><a href="#service" class="scroll-link">Diensten</a></li>
+				<li><a href="#service" class="scroll-link">Diensten</a></li>
 			  <li><a href="#team" class="scroll-link">Team</a></li>
+			  <li><a href="#aboutUs" class="scroll-link">Over Ons</a></li>
 			  <li><a href="#contact" class="scroll-link">Contact</a></li>
 			</ul>
       </div>
@@ -387,11 +387,11 @@
   <div class="container">
     <br />
     <div class="button-container" style="display: flex; justify-content: space-around; margin-top: 20px;">
-      <a href="easyflex:#zzp_fact=6005:23361003" target="_blank" style="background-color: #4CAF50; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
-        Reverse billing factuur: 23361003
+      <a href="easyflex:#zzp_fact=6008:44751008" target="_blank" style="background-color: #4CAF50; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
+        Reverse billing factuur: 44751008
       </a>
-      <a href="easyflex:#fact=6005:2023033" target="_blank" style="background-color: #2196F3; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
-        Factuur relatie: 2023033
+      <a href="easyflex:#fact=6008:24000023" target="_blank" style="background-color: #2196F3; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
+        Factuur relatie: 24000023
       </a>
       <a href="easyflex:#decl=6005:391347559" target="_blank" style="background-color: #f44336; padding: 15px 30px; border-radius: 5px; text-decoration: none; color: white; font-size: 16px; border: none; text-align: center;">
         Declaratie: 391347559
@@ -405,25 +405,58 @@
   <div class="container">
     <h2>Zoek in Easyflex</h2>
     <form id="easyflex-zoekformulier" action="javascript:void(0);" onsubmit="zoekInEasyflex()">
-      <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <input type="text" id="zoekterm" placeholder="Voer zoekterm in..." style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; width: 300px; margin-right: 10px;">
+      <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <img id="chatgpt-logo" src="img/chatgptlogo.png" alt="ChatGPT" width="50" height="50" style="margin-right: 10px; ">
+        <input type="text" id="zoekterm" placeholder="Voer zoekterm in..." style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; width: 250px; margin-right: 10px;">
         <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Zoeken</button>
       </div>
     </form>
   </div>
 </section>
 
+<!-- Dialoogvenster voor verwerking -->
+<div id="zoek_dialoog" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <img src="img/chatgptlogo.png" alt="ChatGPT" width="50" height="50" style="margin-right: 10px; animation: rotate 3s linear infinite;">
+    <span id="loading-text">Even zoeken... <br>Powered by ChatGPT</span>
+  </div>
+</div>
+
+<!-- CSS voor animatie -->
+<style>
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+
 <script>
   function zoekInEasyflex() {
     var zoekterm = document.getElementById("zoekterm").value;
     if (zoekterm) {
-      var url = "easyflex:#search=6005:" + encodeURIComponent(zoekterm);
-      window.open(url, '_blank');
+      // Toon dialoogvenster voor verwerking
+      document.getElementById("zoek_dialoog").style.display = "block";
+
+      // Simuleer een vertraging om te doen alsof de zoekopdracht wordt verwerkt
+      setTimeout(function() {
+        var url = "easyflex:#search=6005:" + encodeURIComponent(zoekterm);
+        window.open(url, '_blank');
+
+        // Verberg dialoogvenster na het openen van de nieuwe tab
+        document.getElementById("zoek_dialoog").style.display = "none";
+      }, 8000); // Vertraging van 3 seconden voor demonstratiedoeleinden, kan worden aangepast
     } else {
       alert("Voer een zoekterm in.");
     }
   }
 </script>
+
+
+
 
 
 <section id="aboutUs"><!--Aboutus-->
