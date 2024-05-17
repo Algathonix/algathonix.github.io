@@ -190,6 +190,117 @@
 </section>
 
 
+<section id="relaties">
+  <div class="container">
+  <br />
+    <h2>Relaties</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" name="naam" placeholder="Zoek op naam" class="form-control">
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="status">Status</label>
+        <select id="status" name="status" class="form-control">
+          <option value="actief">Actief</option>
+          <option value="passief">Passief</option>
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label for="type">Sorteer</label>
+        <select id="type" name="type" class="form-control">
+          <option value="Status">Status</option>
+          <option value="vaste ">Locatie</option>
+		  
+        </select>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <label> </label> <!-- Voor uitlijning -->
+        <button type="button" class="btn btn-primary btn-block">Zoek</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="overzcith_relaties">
+  <div class="container">
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Bedrijf</th>
+      <th>Nummer</th>
+      <th>Debiteurennummer</th>
+      <th>Status</th>
+      <th>Locatie</th>
+      <th>Navigeer naar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H&M</td>
+      <td>3109349</td>
+      <td>100</td>
+      <td>Actief</td>
+      <td>Oosterhout</td>
+      <td>
+        <a href="https://www.google.com/maps/search/?api=1&query=Oosterhout" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Locatie" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Aldi</td>
+      <td>3057403</td>
+      <td>38</td>
+      <td>Actief</td>
+      <td>Breda</td>
+      <td>
+        <a href="https://www.google.com/maps/search/?api=1&query=Breda" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Locatie" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Bakker Bart</td>
+      <td>2890530</td>
+      <td>17</td>
+      <td>Actief</td>
+      <td>Oosterhout</td>
+      <td>
+        <a href="https://www.google.com/maps/search/?api=1&query=Oosterhout" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Locatie" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Wiltec</td>
+      <td>2824255</td>
+      <td>14</td>
+      <td>Actief</td>
+      <td>Oosterhout</td>
+      <td>
+        <a href="https://www.google.com/maps/search/?api=1&query=Oosterhout" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Locatie" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Ahold Delhaize</td>
+      <td>3141574</td>
+      <td>59</td>
+      <td>Actief</td>
+      <td>Breda</td>
+      <td>
+        <a href="https://www.google.com/maps/search/?api=1&query=Breda" target="_blank" style="background-color: white; display: inline-block; padding: 10px; border-radius: 5px;">
+          <img src="img/easyflex-logo-groen.svg" alt="Locatie" width="75" height="25">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</section>
 
 
 <section id="plaatsingen">
@@ -209,10 +320,10 @@
         </select>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <label for="type">Type</label>
+        <label for="type">Sorteer</label>
         <select id="type" name="type" class="form-control">
-          <option value="flexwerker">Flexwerker</option>
-          <option value="vaste medewerker">Vaste Medewerker</option>
+          <option value="flexwerker">Naam</option>
+          <option value="vaste medewerker">Bedrijf</option>
 		  <option value="ZZP">ZZP</option>
 		  
         </select>
@@ -230,13 +341,12 @@
 <br />
 <table class="table table-striped">
   <thead>
-    <tr>
-      <th>Plaatsing nummer</th>
-      <th>Relatie</th>
-      <th>Flexwerker</th>
+     <th>Nummer</th>
+      <th>Bedrijf</th>
+      <th>Naam</th>
       <th>Startdatum</th>
       <th>Einddatum</th>
-      <th>Navigeer naar</th>
+      <th>Profiel</th>
     </tr>
   </thead>
   <tbody>
